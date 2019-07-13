@@ -1,0 +1,21 @@
+{
+    "name": "dandisy/swagger-generator",
+    "description": "Swagger Generator for Webcore Laravel Generator",
+    "keywords": [
+        "webcore",
+        "laravel",
+        "swagger",
+        "templates",
+        "generator"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dandi Setiyawan",
+            "email": "dandi@redbuzz.co.id"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    }
+}
