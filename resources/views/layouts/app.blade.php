@@ -7,35 +7,35 @@
 
     <title>{{ isset($appName) ? $appName : 'WebApp' }}</title>
 
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins//font-awesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/select2/select2.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/dist/css/AdminLTE.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/dist/css/skins/_all-skins.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins//font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/select2/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/dist/css/AdminLTE.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/dist/css/skins/_all-skins.min.css') }}">
 
     <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/ionicons/v2/css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/ionicons/v2/css/ionicons.min.css') }}">
 
     <!-- Date Picker -->
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/datepicker/datepicker3.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/datepicker/datepicker3.css') }}">
 
     <!-- Tags Input -->
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css') }}">
 
     <!-- include Summernote -->
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/summernote/summernote.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/summernote/summernote.css') }}">
 
     <!-- Date Time Picker -->
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/datetimepicker/css/bootstrap-datetimepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/datetimepicker/css/bootstrap-datetimepicker.css') }}">
 
     <!-- include Fancybox -->
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/fancybox/jquery.fancybox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/fancybox/jquery.fancybox.min.css') }}">
 
     <!-- include Fileuploader -->
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/fileuploader/jquery.fileuploader.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/fileuploader/jquery.fileuploader.css') }}">
 
     <!-- include Multi-select -->
-    <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/multi-select/css/multi-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/adminlte/plugins/multi-select/css/multi-select.css') }}">
 
     <style>
         .main-header {
@@ -139,7 +139,7 @@
             <a href="{{ url('/dashboard') }}" class="logo">
                {{-- <b>{{ isset($appName) ? $appName : 'webapp' }}</b>
                 <b  style="width:20%; heigth:auto; color:#12a2bd; font-size:30px; ">PLN</b>--}}
-                <img src="{{asset('img/pln/Logo.png')}}" style="width:60%; heigth:auto; padding-top: 10px;"/>
+                <img src="{{asset('/img/pln/Logo.png')}}" style="width:60%; heigth:auto; padding-top: 10px;"/>
                
             </a>
 
@@ -180,7 +180,7 @@
                                         <img src="{{ Auth::user()->with('profile')->find(Auth::user()->id)->profile->image }}"
                                              class="user-img" alt="User Image"/>
                                         @else                                
-                                        <img src="{{ asset('vendor/adminlte/dist/img/user2-160x160.jpg') }}"
+                                        <img src="{{ asset('/vendor/adminlte/dist/img/user2-160x160.jpg') }}"
                                             class="user-img" alt="User Image"/>
                                         @endif
                                         <i class=" fa fa-ellipsis-v"></i>
@@ -196,7 +196,7 @@
                                     <img src="{{ Auth::user()->with('profile')->find(Auth::user()->id)->profile->image }}"
                                          class="img-circle" alt="User Image"/>
                                     @else                                
-                                    <img src="{{ asset('vendor/adminlte/dist/img/user2-160x160.jpg') }}"
+                                    <img src="{{ asset('/vendor/adminlte/dist/img/user2-160x160.jpg') }}"
                                         class="img-circle" alt="User Image"/>
                                     @endif
                                     <p>
@@ -297,45 +297,45 @@
 
     <!-- Javascript -->
     <!-- jQuery 2.2.3 -->
-    <script src="{{ asset('vendor/adminlte/plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
 
     <!-- Bootstrap -->
-    <script src="{{ asset('vendor/adminlte/plugins//bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins//bootstrap/js/bootstrap.min.js') }}"></script>
 
-    <script src="{{ asset('vendor/adminlte/plugins/moment/moment.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/moment/moment.min.js') }}"></script>
 
     <!-- Date Picker App -->
-    <script src="{{ asset('vendor/adminlte/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
 
     <!-- Date Time Picker -->
-    <script src="{{ asset('vendor/adminlte/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
 
     <!-- Tags Input -->
-    <script src="{{ asset('vendor/adminlte/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js') }}"></script>
 
     <!-- Select2 -->
-    <script src="{{ asset('vendor/adminlte/plugins/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/select2/select2.min.js') }}"></script>
 
     <!-- Summernote -->
-    <script src="{{ asset('vendor/adminlte/plugins/summernote/summernote.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/summernote/summernote.min.js') }}"></script>
 
     <!-- Fancybox -->
-    <script src="{{ asset('vendor/adminlte/plugins/fancybox/jquery.fancybox.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/fancybox/jquery.fancybox.min.js') }}"></script>
 
     <!-- Fileuploader -->
-    <script src="{{ asset('vendor/adminlte/plugins/fileuploader/jquery.fileuploader.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/fileuploader/jquery.fileuploader.min.js') }}"></script>
 
     <!-- Multi-select -->
-    <script src="{{ asset('vendor/adminlte/plugins/multi-select/js/jquery.multi-select.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/multi-select/js/jquery.multi-select.js') }}"></script>
 
     <!-- Quicksearch -->
-    <script src="{{ asset('vendor/adminlte/plugins/quicksearch/jquery.quicksearch.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/quicksearch/jquery.quicksearch.min.js') }}"></script>
 
     <!-- Input Mask -->
-    <script src="{{ asset('vendor/adminlte/plugins/inputmask/min/jquery.inputmask.bundle.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/plugins/inputmask/min/jquery.inputmask.bundle.min.js') }}"></script>
 
     <!-- AdminLTE App -->
-    <script src="{{ asset('vendor/adminlte/dist/js/app.min.js') }}"></script>
+    <script src="{{ asset('/vendor/adminlte/dist/js/app.min.js') }}"></script>
 
     <script>
         $(document).ready(function() {
